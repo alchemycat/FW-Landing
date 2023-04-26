@@ -1,0 +1,181 @@
+@media (min-width: 1200px) {
+    .logo {
+        padding: 16px 30px;
+    }
+    .nav {
+        &__link {
+            padding: 16px 30px;
+        }
+    }
+    .contacts {
+        &__link {
+            padding: 13px;
+        }
+    }
+
+    .title {
+        font-size: 46px;
+        line-height: 55px;
+    }
+
+    .intro {
+        &__caption {
+            font-size: 139px;
+        }
+        &__wrapper {
+            &::after {
+                width: 640px;
+                height: 630px;
+                right: 30px;
+            }
+        }
+    }
+
+    .design {
+        &__wrapper {
+            &::after {
+                width: 580px;
+                height: 670px;
+            }
+        }
+    }
+
+    .calc {
+        &__salary {
+            font-size: 87px;
+        }
+    }
+
+    .request {
+        &__wrapper {
+            &::after {
+                height: 735px;
+            }
+        }
+        &__text {
+            padding: 25px;
+            max-width: 520px;
+        }
+        &__description {
+            max-width: 340px;
+        }
+    }
+}
+
+@media(max-width: 1199px) {
+    .logo {
+        padding: 16px;
+    }
+    .nav {
+        &__link {
+            padding: 16px 20px;
+        }
+    }
+    .contacts {
+        &__phone {
+            padding: 16px 15px;
+        }
+        &__messanger {
+            padding: 11px;
+        }
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .button {
+        padding: 24px 25px;
+    }
+
+    .intro {
+        &__caption {
+            font-size: 110px;
+        }
+        &__wrapper {
+            &::after {
+                width: 550px;
+                height: 540px;
+                right: 40px;
+            }
+        }
+    }
+    
+    .values {
+        &__card {
+            &:nth-child(3) {
+                order: 1;
+            }
+            &:nth-child(1) {
+                order: 3;
+                background-position: center;
+            }
+            &-image {
+                &-2 {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .design {
+        &__wrapper {
+            &::after {
+                width: 480px;
+            }
+        }
+    }
+
+    .calc {
+        &__salary {
+            font-size: 85px;
+        }
+    }
+
+    .request {
+        &__wrapper {
+            &::after {
+                width: 760px;
+                height: 755px;
+            }
+        }
+        &__text {
+            padding: 20px;
+        }
+    }
+
+}
+
+@media(max-width: 991px) {
+    .intro {
+        background-color: var(--white);
+        &__title {
+            position: relative;
+            z-index: 2;
+            margin-top: 0px;
+            text-align: center;
+        }
+        &__subtitle {
+            position: relative;
+            z-index: 2;
+        }
+        &__wrapper {
+            position: relative;
+            &::after {
+                width: 500px;
+                height: 350px;  
+                background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,67,158,0) 100%), url("../img/intro/models.png");
+
+                right: 50%;
+                transform: translateX(50%);
+                z-index: 1;
+            }
+        }
+        &__button {
+            margin-top: 254px;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
