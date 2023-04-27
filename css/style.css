@@ -111,7 +111,7 @@ body {
 
 .nav {
   display: flex;
-  gap: 20px 12px;
+  gap: 20px 10px;
 }
 .nav__link {
   padding: 16px 40px;
@@ -167,11 +167,15 @@ body {
   color: var(--black);
 }
 .contacts__messanger {
-  padding: 15px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
 }
 .contacts__phone {
-  padding: 16px 40px;
+  padding: 16px 25px;
   border-radius: var(--header-border-radius);
 }
 
@@ -627,11 +631,11 @@ body {
   .logo {
     padding: 16px 30px;
   }
+  .nav {
+    gap: 20px 10px;
+  }
   .nav__link {
     padding: 16px 30px;
-  }
-  .contacts__link {
-    padding: 13px;
   }
   .title {
     font-size: 46px;
@@ -670,11 +674,12 @@ body {
   .nav__link {
     padding: 16px 20px;
   }
-  .contacts__phone {
-    padding: 16px 15px;
+  .contacts {
+    gap: 8px;
   }
-  .contacts__messanger {
-    padding: 11px;
+  .contacts__phone {
+    font-size: 13px;
+    padding: 16px 10px;
   }
   .title {
     font-size: 40px;

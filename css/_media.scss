@@ -3,13 +3,9 @@
         padding: 16px 30px;
     }
     .nav {
+        gap: 20px 10px;
         &__link {
             padding: 16px 30px;
-        }
-    }
-    .contacts {
-        &__link {
-            padding: 13px;
         }
     }
 
@@ -72,11 +68,10 @@
         }
     }
     .contacts {
+        gap: 8px;
         &__phone {
-            padding: 16px 15px;
-        }
-        &__messanger {
-            padding: 11px;
+            font-size: 13px;
+            padding: 16px 10px;
         }
     }
 
