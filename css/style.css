@@ -893,4 +893,291 @@ body {
   .footer__rights {
     text-align: center;
   }
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 10px 0px;
+  }
+  .intro__title {
+    max-width: 500px;
+  }
+  .intro__wrapper {
+    padding: 30px 0px;
+  }
+  .intro__wrapper::after {
+    height: 350px;
+    right: 50%;
+    transform: translateX(50%);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)), url("../img/intro/models.png");
+  }
+  .intro__button {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 274px;
+  }
+  .about {
+    padding-top: 40px;
+  }
+  .values {
+    padding-top: 40px;
+  }
+  .design {
+    padding-top: 40px;
+  }
+  .design__col-left {
+    padding: 40px;
+  }
+  .design__button {
+    margin-top: 50px;
+  }
+  .design__image {
+    height: 400px;
+  }
+  .calc {
+    padding-top: 40px;
+  }
+  .calc__salary {
+    font-size: 60px;
+    line-height: 65px;
+  }
+  .calc__button {
+    bottom: 40px;
+    padding: 24px 40px;
+  }
+  .request {
+    padding-top: 40px;
+  }
+  .questions {
+    padding-top: 40px;
+  }
+  .studio {
+    padding-top: 40px;
+  }
+  .footer {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .title {
+    font-size: 34px;
+    line-height: 44px;
+  }
+  .nav {
+    gap: 12px;
+  }
+  .nav__link {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 16px 30px;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .button {
+    display: block;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .intro__title {
+    font-weight: 600;
+    margin-top: 0px;
+  }
+  .intro__subtitle {
+    margin-top: 12px;
+  }
+  .intro__wrapper::after {
+    width: 330px;
+    height: 320px;
+    right: 60%;
+  }
+  .intro__button {
+    margin-top: 250px;
+  }
+  .about {
+    padding-top: 80px;
+  }
+  .about__subtitle {
+    margin-top: 12px;
+  }
+  .about__button {
+    margin-top: 24px;
+  }
+  .values {
+    padding-top: 60px;
+  }
+  .values__wrapper {
+    margin-top: 24px;
+  }
+  .values__card {
+    min-height: 185px;
+  }
+  .values__caption {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .values__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .values__wrapper {
+    gap: 12px;
+  }
+  .design__wrapper {
+    border-radius: 0px;
+  }
+  .design__col-left {
+    padding: 30px 15px 24px 15px;
+  }
+  .design__subtitle {
+    margin-top: 12px;
+  }
+  .design__image {
+    height: 357px;
+  }
+  .design__navigation {
+    right: 50%;
+    bottom: 24px;
+    transform: translateX(50%);
+  }
+  .design .navigation__button-prev {
+    padding: 15px 12px 15px 20px;
+  }
+  .design .navigation__button-next {
+    padding: 15px 20px 15px 12px;
+  }
+  .calc {
+    padding-top: 60px;
+  }
+  .calc__wrapper {
+    padding: 30px 15px 150px 15px;
+    border-radius: 0px;
+  }
+  .calc__subtitle {
+    margin-top: 12px;
+  }
+  .calc__caption {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .calc__select-wrap {
+    margin-top: 12px;
+    max-width: 220px;
+  }
+  .calc__middle {
+    margin-top: 24px;
+  }
+  .calc__salary {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .calc__bottom {
+    margin-top: 0px;
+  }
+  .calc__description {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .calc__button {
+    display: block;
+    width: 90%;
+  }
+  .request {
+    padding-top: 60px;
+  }
+  .request__wrapper {
+    padding: 20px 0px;
+    border-radius: 0px;
+    margin-top: 12x;
+  }
+  .request__caption {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 24px;
+  }
+  .request__top {
+    gap: 12px 0px;
+  }
+  .request__input {
+    padding: 20px 32px;
+  }
+  .request__input::-moz-placeholder {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .request__input::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .request__button {
+    font-size: 16px;
+    line-height: 18px;
+    width: 100%;
+  }
+  .request__label {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .request__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .questions {
+    padding-top: 60px;
+  }
+  .questions__wrapper {
+    margin-top: 24px;
+  }
+  .questions__question {
+    padding: 20px 24px;
+  }
+  .questions__caption {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .studio {
+    padding-top: 60px;
+  }
+  .studio__text {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .footer {
+    padding-top: 60px;
+    margin-bottom: 0px;
+  }
+  .footer__wrapper {
+    border-radius: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 105px;
+    padding-bottom: 30px;
+  }
+  .footer__logo {
+    top: 30px;
+    left: 15px;
+    transform: translateX(0%);
+  }
+  .footer__text {
+    text-align: left;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .footer__contacts {
+    margin-top: 12px;
+  }
+  .footer__address {
+    margin-top: 12px;
+  }
+  .footer__nav {
+    justify-content: flex-start;
+  }
+  .footer__rights {
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */

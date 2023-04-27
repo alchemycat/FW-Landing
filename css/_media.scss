@@ -338,3 +338,327 @@
         }
     }
 }
+
+@media(max-width: 767px) {
+    .header {
+        padding: 10px 0px;
+    }
+    .intro {
+        &__title {
+            max-width: 500px;
+        }
+        &__wrapper {
+            padding: 30px 0px;
+            &::after {
+                height: 350px;
+                right: 50%;
+                transform: translateX(50%);
+                background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), url("../img/intro/models.png");
+            }
+        }
+        &__button {
+            display: block;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 274px;
+        }
+    }
+
+    .about {
+        padding-top: 40px;
+    }
+
+    .values {
+        padding-top: 40px;
+    }   
+    
+    .design {
+        padding-top: 40px;
+        &__col {
+            &-left {
+                padding: 40px;
+            }
+        }
+        &__button {
+            margin-top: 50px;
+        }
+        &__image {
+            height: 400px;
+        }
+    }
+
+    .calc {
+        padding-top: 40px;
+        &__salary {
+            font-size: 60px;
+            line-height: 65px;
+        }
+        &__button {
+            bottom: 40px;
+            padding: 24px 40px;
+        }
+    }
+    
+    .request {
+        padding-top: 40px;
+    }
+
+    .questions {
+        padding-top: 40px;
+    }
+
+    .studio {
+        padding-top: 40px;
+    }
+
+    .footer {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    .title {
+        font-size: 34px;
+        line-height: 44px;
+    }
+
+    .nav {
+        gap: 12px;
+        &__link {
+            font-size: 14px;
+            line-height: 18px;
+            padding: 16px 30px;
+            text-align: center;
+        }
+    }
+
+    .subtitle {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .button {
+        display: block;
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    .intro {
+        &__title {
+            font-weight: 600;
+            margin-top: 0px;
+        }
+        &__subtitle {
+            margin-top: 12px;
+        }
+        &__wrapper {
+            &::after {
+                width: 330px;
+                height: 320px;
+                right: 60%;
+            }
+        }
+        &__button {
+           
+            margin-top: 250px;
+        }
+    }
+    
+    .about {
+        padding-top: 80px;
+        &__subtitle {
+            margin-top: 12px;
+        }
+        &__button {
+            margin-top: 24px;
+        }
+    }
+
+    .values {
+        padding-top: 60px;
+        &__wrapper {
+            margin-top: 24px;
+        }
+        &__card {
+            min-height: 185px;
+        }
+        &__caption {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        &__description {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__wrapper {
+            gap: 12px;
+        }
+    }
+
+    .design {
+        &__wrapper {
+            border-radius: 0px;
+        }
+        &__col {
+            &-left {
+                padding: 30px 15px 24px 15px;
+            }
+        }
+        &__subtitle {
+            margin-top: 12px;
+        }
+        &__image {
+            height: 357px;
+        }
+        &__navigation {
+            right: 50%;
+            bottom: 24px;
+            transform: translateX(50%);
+        }
+        .navigation {
+            &__button {
+                &-prev {
+                    padding: 15px 12px 15px 20px;
+                }
+                &-next {
+                    padding: 15px 20px 15px 12px;
+                }
+            }
+        }
+    }
+
+    .calc {
+        padding-top: 60px;
+        &__wrapper {
+            padding: 30px 15px 150px 15px;
+            border-radius: 0px;
+        }
+        &__subtitle {
+            margin-top: 12px;
+        }
+        &__caption {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        &__select {
+            &-wrap {
+                margin-top: 12px;
+                max-width: 220px;
+            }
+        }
+        &__middle {
+            margin-top: 24px;
+        }
+        &__salary {
+            font-size: 36px;
+            line-height: 44px;
+        }
+        &__bottom {
+            margin-top: 0px;
+        }
+        &__description {
+            margin-top: 12px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__button {
+            display: block;
+            width: 90%;
+        }
+    }
+
+    .request {
+        padding-top: 60px;
+        &__wrapper {
+            padding: 20px 0px;
+            border-radius: 0px;
+            margin-top: 12x;
+        }
+        &__caption {
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 24px;
+        }
+        &__top {
+            gap: 12px 0px;
+        }
+        &__input {
+            padding: 20px 32px;
+            &::placeholder {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        &__button {
+            font-size: 16px;
+            line-height: 18px;
+            width: 100%;
+        }
+        &__label {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &__description {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    .questions {
+        padding-top: 60px;
+        &__wrapper {
+            margin-top: 24px;
+        }
+        &__question {
+            padding: 20px 24px;
+        }
+        &__caption {
+            font-size: 18px;
+            line-height: 25px;  
+        }
+    }
+
+    .studio {
+        padding-top: 60px;
+        &__text {
+            margin-top: 12px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    .footer {
+        padding-top: 60px;
+        margin-bottom: 0px;
+        &__wrapper {
+            border-radius: 0px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 105px;
+            padding-bottom: 30px;
+        }
+        &__logo {
+            top: 30px;
+            left: 15px;
+            transform: translateX(0%);
+        }
+        &__text {
+            text-align: left;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        &__contacts {
+            margin-top: 12px;
+        }
+        &__address {
+            margin-top: 12px;
+        }
+        &__nav {
+            justify-content: flex-start;
+        }
+        &__rights {
+            margin-top: 40px;
+        }
+    }
+}

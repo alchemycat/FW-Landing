@@ -12,12 +12,12 @@
 		<header class="header">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-lg-11 col-md-12">
+					<div class="col-lg-11 col-12">
 						<div class="row align-items-center justify-content-between">
-							<div class="col-2 d-md-none d-lg-block">
+							<div class="col-2 d-none d-lg-block">
 								<a href="#" class="header__logo logo">Family. Studio</a>
 							</div>
-							<div class="col-6 d-md-none d-lg-block">
+							<div class="col-6 d-none d-lg-block">
 								<nav class="header__nav nav d-flex justify-content-end">
 									<a href="#" class="header__link nav__link">О нас</a>
 									<a href="#" class="header__link nav__link">Фото</a>
@@ -48,7 +48,7 @@
 
 									<a
 										href="tel:+79500000000"
-										class="header__contacts-link contacts__link contacts__phone d-md-none d-lg-block"
+										class="header__contacts-link contacts__link contacts__phone d-none d-lg-block"
 										>+7 950 000 00 00</a
 									>
 								</div>
@@ -65,20 +65,20 @@
 		<section class="intro">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-lg-11 col-md-12">
+					<div class="col-lg-11 col-12">
 						<div class="row flex-column intro__wrapper">
 							<div class="col">
-								<p class="intro__caption d-lg-flex">Family Studio</p>
+								<p class="intro__caption d-md-flex d-none">Family Studio</p>
 							</div>
-							<div class="col-md-8 col-lg-6">
+							<div class="col-12 col-md-8 col-lg-6">
 								<h2 class="intro__title title">работа вебкам моделью в СПб</h2>
 							</div>
-							<div class="col-md-6 col-lg-4">
+							<div class="col-12 col-md-6 col-lg-4">
 								<p class="intro__subtitle subtitle">
 									Без опыта, ежедневные выплаты, никаких штрафов
 								</p>
 							</div>
-							<div class="col-md-4">
+							<div class="col-12 col-md-4">
 								<a href="#" class="intro__button button">Отправить анкету</a>
 							</div>
 						</div>
@@ -115,11 +115,11 @@
 		<section class="values">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-11 col-md-12">
+					<div class="col-lg-11 col-12">
 						<h2 class="values__title title">Ценности команды family</h2>
-						<div class="row values__wrapper justify-content-between">
+						<div class="row values__wrapper justify-content-between flex-column flex-md-row">
 							<div
-								class="col-xl-6 col-md-12 values__card values__card-image values__card-image-1"
+								class="col-xl-6 col-12 values__card values__card-image values__card-image-1"
 							></div>
 							<div class="col values__card">
 								<h4 class="values__caption">Никаких ШТРАФОВ</h4>
@@ -135,7 +135,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="row values__wrapper justify-content-between">
+						<div class="row values__wrapper justify-content-between flex-column flex-md-row">
 							<div class="col values__card">
 								<h4 class="values__caption">ЕЖЕДНЕВНЫЕ ВЫПЛАТЫ</h4>
 								<p class="values__description">
@@ -161,7 +161,7 @@
 		<section class="design">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-11 col-md-12">
+					<div class="col-lg-11 col-12">
 						<div class="row design__wrapper flex-lg-row flex-md-column">
 							<div class="col-lg-5 col-md-12 design__col-left">
 								<h2 class="design__title title">стильный дизайн комнат</h2>
@@ -169,7 +169,7 @@
 									Каждая комната создавалась по индивидуальному дизайну, делая
 									вашу работу комфортнее и создавая уютную атмосферу
 								</p>
-								<a href="#" class="design__button button d-md-none">Отправить анкету</a>
+								<a href="#" class="design__button button d-none d-lg-block">Отправить анкету</a>
 							</div>
 							<div class="col-lg-7 col-md-12 design__col-right p-0">
 									<img src="/img/design/image-1.png" class="design__image" alt="design">
@@ -220,8 +220,8 @@
 		<section class="calc">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-11 col-md-12">
-						<div class="row calc__wrapper flex-md-column flex-lg-row">
+					<div class="col-lg-11 col-12">
+						<div class="row calc__wrapper flex-column flex-lg-row">
 							<div class="col calc__left">
 								<h2 class="calc__title title title-white">
 									твой доход с Family
@@ -274,14 +274,14 @@
 		<section class="request">
 			<div class="container">
 				<div class="row align-items-center flex-column gap-5">
-					<div class="col-lg-11 col-md-12">
+					<div class="col-lg-11 col-12">
 						<h2 class="request__title title">
 							Если хочешь в нашу вебкам семью, мы будем рады пообщаться лично
 						</h2>
 					</div>
-					<div class="col-lg-11 col-md-12">
+					<div class="col-lg-11 col-12">
 						<div class="row request__wrapper">
-							<div class="col-lg-6 col-md-12">
+							<div class="col-lg-6 col-12">
 								<form action="" method="POST" class="request__form form">
 									<fieldset>
 										<legend class="request__caption">
@@ -339,7 +339,7 @@
 										доехать к нам на собеседование — скажи об этом
 										администратору и мы закажем тебе машину от дома до студии
 									</p>
-									<p class="request__image d-lg-block d-md-none">
+									<p class="request__image d-lg-block d-none">
 										<img src="/img/request/map.svg" alt="map" />
 									</p>
 								</div>
