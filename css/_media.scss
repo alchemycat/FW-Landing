@@ -190,7 +190,7 @@
             position: relative;
             padding: 60px 0px;
             &::after {
-                background-image: url("../img/intro/models-desktop-sm.png");
+                background-image: url("../img/intro/models-lg.png");
                 width: 500px;
                 height: 450px;
                 right: -20px;
@@ -207,7 +207,7 @@
     .webp .intro {
         &__wrapper {
             &::after {
-                background-image: url("../img/intro/models-desktop-sm.webp");
+                background-image: url("../img/intro/models-lg.webp");
             }
         }
     }
@@ -455,7 +455,7 @@
                 height: 360px;
                 right: 50%;
                 transform: translateX(50%);
-                background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.9)), url("../img/intro/models-tablet.png");
+                background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.9)), url("../img/intro/models-md.png");
             }
         }
         &__button {
@@ -471,7 +471,7 @@
             &::after {
                 width: 431px;
                 height: 360px;
-                background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.9)), url("../img/intro/models-tablet.webp");
+                background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.9)), url("../img/intro/models-md.webp");
             }
         }
     }
@@ -568,7 +568,7 @@
             &::after {
                 width: 292px;
                 height: 320px;
-                background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.9)), url("../img/intro/models-phone.png");
+                background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.9)), url("../img/intro/models-sm.png");
             }
         }
         &__button {
@@ -582,7 +582,7 @@
             &::after {
                 width: 292px;
                 height: 320px;
-                background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.9)), url("../img/intro/models-phone.webp");
+                background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.9)), url("../img/intro/models-sm.webp");
             }
         }
     }
@@ -608,7 +608,7 @@
                 background-size: contain;
 
                 &-1 {
-                    background-image: url("../img/values/image-1-phone.png");
+                    background-image: url("../img/values/image-1-sm.png");
                 }
             }
         }
@@ -630,7 +630,7 @@
             &-image {
                 background-size: contain;
                 &-1 {
-                    background-image: url("../img/values/image-1-phone.webp");
+                    background-image: url("../img/values/image-1-sm.webp");
                 }
             }
         }
