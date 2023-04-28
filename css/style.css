@@ -26,34 +26,6 @@
   font-style: normal;
   font-display: swap;
 }
-.button {
-  display: inline-block;
-  font-size: 16px;
-  line-height: 18px;
-  color: var(--white);
-  padding: 24px 60px;
-  background-color: var(--black);
-  border-radius: 58px;
-  text-align: center;
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
-}
-.button:hover {
-  background-color: var(--white);
-  color: var(--black);
-  border: 1px solid var(--black);
-}
-.button-white {
-  background-color: var(--white);
-  color: var(--black);
-  border: 1px solid var(--black);
-}
-.button-white:hover {
-  color: var(--white);
-  background-color: var(--black);
-  border: 1px solid var(--white);
-}
-
 :root {
   --black: #202020;
   --dark-yellow: rgba(255, 224, 59, 0.5);
@@ -128,6 +100,34 @@ body {
 }
 .subtitle-white {
   color: var(--white);
+}
+
+.button {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+  padding: 24px 60px;
+  background-color: var(--black);
+  border-radius: 58px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+.button-white {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+.button-white:hover {
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--white);
 }
 
 .nav__list {
@@ -297,7 +297,7 @@ body {
 
 .intro__caption {
   font-weight: 200;
-  font-size: 163px;
+  font-size: 160px;
   line-height: 99.02%;
   color: var(--dark-yellow);
   text-transform: uppercase;
@@ -327,6 +327,10 @@ body {
 }
 .intro__button {
   margin-top: 100px;
+}
+
+.webp .intro__wrapper::after {
+  background-image: url("../img/intro/models.webp");
 }
 
 .about {
@@ -791,6 +795,11 @@ body {
     max-width: 340px;
   }
 }
+@media (min-width: 1400px) {
+  .intro__caption {
+    font-size: 160px;
+  }
+}
 @media (max-width: 1199px) {
   .logo {
     padding: 16px;
@@ -819,9 +828,9 @@ body {
     font-size: 110px;
   }
   .intro__wrapper::after {
-    width: 550px;
-    height: 540px;
-    right: 40px;
+    width: 600px;
+    height: 590px;
+    right: 0px;
   }
   .values__card:nth-child(3) {
     order: 1;
@@ -868,21 +877,26 @@ body {
     z-index: 2;
   }
   .intro__caption {
-    font-size: 80px;
+    font-size: 100px;
   }
   .intro__wrapper {
     position: relative;
     padding: 60px 0px;
   }
   .intro__wrapper::after {
-    width: 410px;
-    height: 400px;
+    background-image: url("../img/intro/models-desktop-sm.png");
+    width: 500px;
+    height: 450px;
+    right: -20px;
     z-index: 1;
   }
   .intro__button {
     margin-top: 60px;
     position: relative;
     z-index: 2;
+  }
+  .webp .intro__wrapper::after {
+    background-image: url("../img/intro/models-desktop-sm.webp");
   }
   .about {
     padding-top: 100px;
@@ -999,6 +1013,9 @@ body {
   .contacts__phone-white {
     padding: 16px 16px;
   }
+  .header {
+    padding: 20px 0px;
+  }
   .header__logo {
     display: none;
   }
@@ -1096,21 +1113,29 @@ body {
   }
   .intro__title {
     max-width: 500px;
+    font-size: 50px;
+    line-height: 60px;
   }
   .intro__wrapper {
     padding: 30px 0px;
   }
   .intro__wrapper::after {
-    height: 350px;
+    width: 431px;
+    height: 360px;
     right: 50%;
     transform: translateX(50%);
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)), url("../img/intro/models.png");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9)), url("../img/intro/models-tablet.png");
   }
   .intro__button {
     display: block;
     max-width: 600px;
     margin: 0 auto;
     margin-top: 274px;
+  }
+  .webp .intro__wrapper::after {
+    width: 431px;
+    height: 360px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9)), url("../img/intro/models-tablet.webp");
   }
   .about {
     padding-top: 40px;
@@ -1174,7 +1199,7 @@ body {
   }
   .button {
     display: block;
-    max-width: 100%;
+    max-width: 320px;
     font-size: 16px;
     line-height: 18px;
   }
@@ -1186,12 +1211,17 @@ body {
     margin-top: 12px;
   }
   .intro__wrapper::after {
-    width: 330px;
+    width: 292px;
     height: 320px;
-    right: 60%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9)), url("../img/intro/models-phone.png");
   }
   .intro__button {
     margin-top: 250px;
+  }
+  .webp .intro__wrapper::after {
+    width: 292px;
+    height: 320px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9)), url("../img/intro/models-phone.webp");
   }
   .about {
     padding-top: 80px;

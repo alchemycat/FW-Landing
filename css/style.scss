@@ -1,5 +1,4 @@
 @import "./fonts";
-@import "./button";
 
 :root {
     --black: #202020;
@@ -73,6 +72,34 @@ body {
     color: var(--black);
     &-white {
         color: var(--white);
+    }
+}
+
+.button {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--white);
+    padding: 24px 60px;
+    background-color: var(--black);
+    border-radius: 58px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    &:hover {
+        background-color: var(--white);
+        color: var(--black);
+        border: 1px solid var(--black);
+    }
+    &-white {
+        background-color: var(--white);
+        color: var(--black);
+        border: 1px solid var(--black);
+        &:hover {
+            color: var(--white);
+            background-color: var(--black);
+            border: 1px solid var(--white);
+        }
     }
 }
 
@@ -255,7 +282,7 @@ body {
 .intro {
     &__caption {
         font-weight: 200;
-        font-size: 163px;
+        font-size: 160px;
         line-height: 99.02%;
         color: var(--dark-yellow);
         text-transform: uppercase;
@@ -285,6 +312,14 @@ body {
     }
     &__button {
         margin-top: 100px;
+    }
+}
+
+.webp .intro {
+    &__wrapper {
+        &::after {
+            background-image: url("../img/intro/models.webp");
+        }
     }
 }
 

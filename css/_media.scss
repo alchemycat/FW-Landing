@@ -64,6 +64,15 @@
     }
 }
 
+@media (min-width: 1400px) {
+    .intro {
+        &__caption {
+            font-size: 160px;
+        }
+    }
+}
+
+
 @media(max-width: 1199px) {
     .logo {
         padding: 16px;
@@ -102,9 +111,9 @@
         }
         &__wrapper {
             &::after {
-                width: 550px;
-                height: 540px;
-                right: 40px;
+                width: 600px;
+                height: 590px;
+                right: 0px;
             }
         }
     }
@@ -175,14 +184,16 @@
             z-index: 2;
         }
         &__caption {
-            font-size: 80px;
+            font-size: 100px;
         }
         &__wrapper {
             position: relative;
             padding: 60px 0px;
             &::after {
-                width: 410px;
-                height: 400px;  
+                background-image: url("../img/intro/models-desktop-sm.png");
+                width: 500px;
+                height: 450px;
+                right: -20px;
                 z-index: 1;
             }
         }
@@ -190,6 +201,14 @@
             margin-top: 60px;
             position: relative;
             z-index: 2;
+        }
+    }
+
+    .webp .intro {
+        &__wrapper {
+            &::after {
+                background-image: url("../img/intro/models-desktop-sm.webp");
+            }
         }
     }
 
@@ -321,6 +340,7 @@
         }
     }
     .header {
+        padding: 20px 0px;
         &__logo {
             display: none;
         }
@@ -425,14 +445,17 @@
     .intro {
         &__title {
             max-width: 500px;
+            font-size: 50px;
+            line-height: 60px;
         }
         &__wrapper {
             padding: 30px 0px;
             &::after {
-                height: 350px;
+                width: 431px;
+                height: 360px;
                 right: 50%;
                 transform: translateX(50%);
-                background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), url("../img/intro/models.png");
+                background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.9)), url("../img/intro/models-tablet.png");
             }
         }
         &__button {
@@ -440,6 +463,16 @@
             max-width: 600px;
             margin: 0 auto;
             margin-top: 274px;
+        }
+    }
+
+    .webp .intro {
+        &__wrapper {
+            &::after {
+                width: 431px;
+                height: 360px;
+                background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.9)), url("../img/intro/models-tablet.webp");
+            }
         }
     }
 
@@ -518,7 +551,7 @@
 
     .button {
         display: block;
-        max-width: 100%;
+        max-width: 320px;
         font-size: 16px;
         line-height: 18px;
     }
@@ -533,14 +566,24 @@
         }
         &__wrapper {
             &::after {
-                width: 330px;
+                width: 292px;
                 height: 320px;
-                right: 60%;
+                background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.9)), url("../img/intro/models-phone.png");
             }
         }
         &__button {
            
             margin-top: 250px;
+        }
+    }
+
+    .webp .intro {
+        &__wrapper {
+            &::after {
+                width: 292px;
+                height: 320px;
+                background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.9)), url("../img/intro/models-phone.webp");
+            }
         }
     }
     
