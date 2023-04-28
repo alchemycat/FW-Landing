@@ -8,8 +8,6 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     );
 
-    console.log(swiper)
-
     function menu() {
         const burger = document.querySelector(".header__burger");
         const header = document.querySelector(".header__wrapper");

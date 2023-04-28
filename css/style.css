@@ -247,6 +247,7 @@ body {
   top: 0px;
   z-index: 50;
   width: 100%;
+  padding: 40px 0px;
 }
 .header:before {
   content: "";
@@ -269,7 +270,6 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 90px;
 }
 .header__logo {
   position: relative;
@@ -640,49 +640,45 @@ body {
   word-wrap: break-word;
   max-width: 630px;
 }
-.questions__top {
-  position: relative;
-}
-.questions__top::after {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0px;
-  content: "";
-  background-image: url("../img/questions/arrow-down.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 16px;
-  height: 16px;
-}
 .questions__answer {
   margin-top: 20px;
-  display: none;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
-  color: var(--white);
+  color: var(--black);
   word-wrap: break-word;
+}
+.questions__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.questions__top svg {
+  transition: all 0.1s ease;
 }
 .questions__question {
   padding: 20px 32px;
   border: 1px solid var(--black);
   border-radius: 50px;
   cursor: pointer;
+  transition: all 0.1s ease;
 }
-.questions__question.active {
+.questions__question:has(.show), .questions__question:has(.collapsing) {
   background-color: var(--black);
   color: var(--white);
   border-radius: 30px;
 }
-.questions__question.active .questions__top::after {
-  background-image: url("../img/questions/arrow-up.svg");
+.questions__question:has(.show) .questions__top svg, .questions__question:has(.collapsing) .questions__top svg {
+  transform: rotate(-90deg);
 }
-.questions__question.active .questions__caption {
+.questions__question:has(.show) .questions__top svg path, .questions__question:has(.collapsing) .questions__top svg path {
+  stroke: var(--white);
+}
+.questions__question:has(.show) .questions__caption, .questions__question:has(.collapsing) .questions__caption {
   color: var(--white);
 }
-.questions__question.active .questions__answer {
-  display: block;
+.questions__question:has(.show) .questions__answer, .questions__question:has(.collapsing) .questions__answer {
+  color: var(--white);
 }
 
 .studio {

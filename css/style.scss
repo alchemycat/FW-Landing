@@ -203,6 +203,7 @@ body {
     top: 0px;
     z-index: 50;
     width: 100%;
+    padding: 40px 0px;
     &:before {
         content: "";
         position: absolute;
@@ -221,12 +222,10 @@ body {
     }
     &__body {
         position: relative;
-        // z-index: 2;
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 90px;
     }
     &__logo {
         position: relative;
@@ -619,53 +618,52 @@ body {
         word-wrap: break-word;
         max-width: 630px;
     }
-    &__top {
-        position: relative;
-        &::after {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 0px;
-            content: "";
-            background-image: url("../img/questions/arrow-down.svg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 16px;
-            height: 16px;
-        }
-    }
+
     &__answer {
         margin-top: 20px;
-        display: none;
         font-weight: 400;
         font-size: 18px;
         line-height: 26px;
-        color: var(--white);
+        color: var(--black);
         word-wrap: break-word;
     }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        svg {
+            transition: all .1s ease;
+        }
+    }
+
     &__question {
         padding: 20px 32px;
         border: 1px solid var(--black);
         border-radius: 50px;
         cursor: pointer;
- 
-        &.active {
+        transition: all .1s ease;
+
+        &:has(.show), &:has(.collapsing) {
             background-color: var(--black);
             color: var(--white);
             border-radius: 30px;
+
             & .questions__top {
-                &::after {
-                    background-image: url("../img/questions/arrow-up.svg");
+                svg {
+                    transform: rotate(-90deg);
+                    path {
+                        stroke: var(--white);
+                    }
                 }
             }
-            
+
             & .questions__caption {
                 color: var(--white);
             }
 
             & .questions__answer {
-
-                display: block;
+                color: var(--white);
             }
         }
     }
@@ -741,8 +739,84 @@ body {
 .swiper-wrapper {
     height: 100%;
 }
+
 .swiper-slide {
     height: 100%;
 }
+
+// .accordion-item {
+//     background-color: transparent
+// }
+
+// .accordion-button {
+//     background-color: transparent
+// }
+
+// .accordion-body {
+//     padding: 0px;
+// }
+
+// .accordion-button:not(.collapsed) {
+//     color: var(--black);
+//     background-color: transparent;
+//     box-shadow: none;
+// }
+
+// .accordion-button:focus {
+//     border-color: none;
+//     outline: 0;
+//     box-shadow: none;
+// }
+
+// .accordion-flush.accordion-item {
+//     border-radius: 50px;
+//     border: 1px solid var(--black);
+// }
+
+// .accordion-flush .accordion-item:first-child {
+//     border-top: 1px solid var(--black);
+// }
+
+// .accordion-flush .accordion-item:last-child {
+//     border-bottom: 1px solid var(--black);
+// }
+
+// .accordion-flush .accordion-item {
+//     border-right: 1px solid var(--black);
+//     border-left: 1px solid var(--black);
+//     border-radius: 1px solid var(--black);
+// }
+
+// .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+//     border-radius: 50px;
+// }
+
+// .accordion-item:not(:first-of-type) {
+//     border-top: 1px solid var(--black);
+// }
+
+// .accordion-flush .accordion-item {
+//     border-radius: 50px;
+// }
+
+// .accordion-button::after {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     right: 0px;
+//     content: "";
+//     background-image: url(../img/questions/arrow-down.svg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     width: 16px;
+//     height: 16px;
+// }
+
+// .accordion-button:not(.collapsed)::after {
+//     background-image: url(../img/questions/arrow-down.svg);
+//     transform: rotate(260deg);
+// }
+
+
 
 @import "./media";
