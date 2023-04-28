@@ -604,6 +604,13 @@
         }
         &__card {
             min-height: 185px;
+            &-image {
+                background-size: contain;
+
+                &-1 {
+                    background-image: url("../img/values/image-1-phone.png");
+                }
+            }
         }
         &__caption {
             font-size: 18px;
@@ -615,6 +622,17 @@
         }
         &__wrapper {
             gap: 12px;
+        }
+    }
+
+    .webp .values {
+        &__card {
+            &-image {
+                background-size: contain;
+                &-1 {
+                    background-image: url("../img/values/image-1-phone.webp");
+                }
+            }
         }
     }
 
@@ -781,6 +799,23 @@
         }
         &__rights {
             margin-top: 40px;
+        }
+    }
+}
+
+@media(max-width: 360px) {
+    .values {
+        &__card {
+            &-image {
+                background-size: cover;
+            }
+        }
+    }
+    .webp .values {
+        &__card {
+            &-image {
+                background-size: cover;
+            }
         }
     }
 }

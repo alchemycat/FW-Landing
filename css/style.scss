@@ -351,6 +351,7 @@ body {
             color: var(--black);
         }
         &-image {
+            background-color: var(--white);
             background-repeat: no-repeat;
             background-size: cover;
             border: none;
@@ -372,6 +373,23 @@ body {
         font-weight: 400;
         font-size: 18px;
         line-height: 26px;
+    }
+}
+
+.webp .values {
+    &__card {
+        &-image {
+            background-color: var(--white);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: none;
+            &-1 {
+                background-image: url("../img/values/image-1.webp");
+            }
+            &-2 {
+                background-image: url("../img/values/image-2.webp");
+            }
+        }
     }
 }
 

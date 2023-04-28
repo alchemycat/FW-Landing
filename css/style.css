@@ -363,6 +363,7 @@ body {
   color: var(--black);
 }
 .values__card-image {
+  background-color: var(--white);
   background-repeat: no-repeat;
   background-size: cover;
   border: none;
@@ -383,6 +384,19 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
+}
+
+.webp .values__card-image {
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+.webp .values__card-image-1 {
+  background-image: url("../img/values/image-1.webp");
+}
+.webp .values__card-image-2 {
+  background-image: url("../img/values/image-2.webp");
 }
 
 .design {
@@ -1241,6 +1255,12 @@ body {
   .values__card {
     min-height: 185px;
   }
+  .values__card-image {
+    background-size: contain;
+  }
+  .values__card-image-1 {
+    background-image: url("../img/values/image-1-phone.png");
+  }
   .values__caption {
     font-size: 18px;
     line-height: 25px;
@@ -1251,6 +1271,12 @@ body {
   }
   .values__wrapper {
     gap: 12px;
+  }
+  .webp .values__card-image {
+    background-size: contain;
+  }
+  .webp .values__card-image-1 {
+    background-image: url("../img/values/image-1-phone.webp");
   }
   .design__wrapper {
     border-radius: 0px;
@@ -1405,5 +1431,13 @@ body {
   }
   .footer__rights {
     margin-top: 40px;
+  }
+}
+@media (max-width: 360px) {
+  .values__card-image {
+    background-size: cover;
+  }
+  .webp .values__card-image {
+    background-size: cover;
   }
 }/*# sourceMappingURL=style.css.map */
