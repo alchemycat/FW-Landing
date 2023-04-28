@@ -440,6 +440,9 @@ body {
   z-index: 2;
   display: flex;
 }
+.design .navigation__button {
+  cursor: pointer;
+}
 .design .navigation__button-prev {
   padding: 18px 20px 18px 32px;
   border-radius: 50px 0px 0px 50px;
@@ -452,7 +455,6 @@ body {
   position: absolute;
   bottom: 60px;
   left: 60px;
-  border: none;
 }
 
 .calc {

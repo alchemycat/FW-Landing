@@ -436,6 +436,7 @@ body {
     }
     .navigation {
         &__button {
+            cursor: pointer;
             &-prev {
                 padding: 18px 20px 18px 32px;
                 border-radius: 50px 0px 0px 50px;
@@ -451,7 +452,6 @@ body {
         position: absolute;
         bottom: 60px;
         left: 60px;
-        border: none;
     }
 }
 
