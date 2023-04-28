@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Test</title>
 		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
@@ -223,6 +224,7 @@
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-11 col-12">
+						<!-- Slider main container -->
 						<div class="row design__wrapper flex-lg-row flex-md-column">
 							<div class="col-lg-5 col-md-12 design__col-left">
 								<h2 class="design__title title">стильный дизайн комнат</h2>
@@ -235,11 +237,34 @@
 								>
 							</div>
 							<div class="col-lg-7 col-md-12 design__col-right p-0">
-								<img
-									src="/img/design/image-1.png"
-									class="design__image"
-									alt="design"
-								/>
+								<div class="swiper">
+									<!-- Additional required wrapper -->
+									<div class="swiper-wrapper">
+										<!-- Slides -->
+										<div class="swiper-slide">
+											<img
+												src="/img/design/image-1.png"
+												class="design__image"
+												alt="design"
+											/>
+										</div>
+										<div class="swiper-slide">
+											<img
+												src="/img/design/image-1.png"
+												class="design__image"
+												alt="design"
+											/>
+										</div>
+										<div class="swiper-slide">
+											<img
+												src="/img/design/image-1.png"
+												class="design__image"
+												alt="design"
+											/>
+										</div>
+									</div>
+								</div>
+
 								<div class="design__navigation navigation">
 									<button
 										class="navigation__button button navigation__button-prev"
@@ -646,6 +671,7 @@
 		</footer>
 
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
