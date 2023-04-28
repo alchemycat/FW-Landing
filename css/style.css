@@ -30,15 +30,28 @@
   display: inline-block;
   font-size: 16px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: var(--white);
   padding: 24px 60px;
   background-color: var(--black);
   border-radius: 58px;
   text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--black);
 }
 .button-white {
   background-color: var(--white);
   color: var(--black);
+  border: 1px solid var(--black);
+}
+.button-white:hover {
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--white);
 }
 
 :root {
@@ -129,16 +142,18 @@ body {
   background-color: transparent;
   border-radius: var(--header-border-radius);
   border: 1px solid var(--black);
+  transition: all 0.3s ease;
 }
 .nav__link:hover {
   color: var(--black);
+  background-color: var(--white);
 }
 .nav__link-white {
   border: 1px solid var(--white);
   color: var(--white);
 }
 .nav__link-white:hover {
-  color: var(--white);
+  color: var(--black);
 }
 
 .logo {
@@ -178,10 +193,23 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.contacts__messanger:hover {
+  background-color: var(--white);
+}
+.contacts__messanger:hover svg path {
+  fill: var(--black);
 }
 .contacts__messanger-white {
   background-color: var(--white);
-  color: var(--black);
+}
+.contacts__messanger-white:hover {
+  background-color: var(--black);
+  border: 1px solid var(--white);
+}
+.contacts__messanger-white:hover svg path {
+  fill: var(--white);
 }
 .contacts__phone {
   font-size: var(--default-font-size);
@@ -194,10 +222,23 @@ body {
   border: 1px solid var(--black);
   padding: 16px 25px;
   border-radius: var(--header-border-radius);
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+.contacts__phone:hover {
+  color: var(--black);
+  border: 1px solid var(--black);
+  background-color: var(--white);
 }
 .contacts__phone-white {
   background-color: var(--white);
   color: var(--black);
+  border: 1px solid var(--white);
+}
+.contacts__phone-white:hover {
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--white);
 }
 
 .header {
@@ -678,6 +719,7 @@ body {
 }
 .footer__contacts {
   margin-top: 40px;
+  gap: 12px;
 }
 .footer__contacts svg path {
   fill: var(--black);
@@ -945,6 +987,9 @@ body {
   .contacts__phone {
     font-size: 14px;
     padding: 16px 40px;
+  }
+  .contacts__phone-white {
+    padding: 16px 16px;
   }
   .header__logo {
     display: none;

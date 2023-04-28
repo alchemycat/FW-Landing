@@ -2,13 +2,26 @@
     display: inline-block;
     font-size: 16px;
     line-height: 18px;
-    color: #FFFFFF;
+    color: var(--white);
     padding: 24px 60px;
     background-color: var(--black);
     border-radius: 58px;
     text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    &:hover {
+        background-color: var(--white);
+        color: var(--black);
+        border: 1px solid var(--black);
+    }
     &-white {
         background-color: var(--white);
         color: var(--black);
+        border: 1px solid var(--black);
+        &:hover {
+            color: var(--white);
+            background-color: var(--black);
+            border: 1px solid var(--white);
+        }
     }
 }
