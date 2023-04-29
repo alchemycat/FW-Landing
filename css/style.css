@@ -1465,6 +1465,30 @@ body {
   }
   .footer__logo {
     top: 30px;
+  }
+  .footer__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .footer__contacts {
+    margin-top: 12px;
+  }
+  .footer__address {
+    margin-top: 12px;
+  }
+  .footer__rights {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 360px) {
+  .values__card-image {
+    background-size: cover;
+  }
+  .webp .values__card-image {
+    background-size: cover;
+  }
+  .footer__logo {
+    top: 30px;
     left: 15px;
     transform: translateX(0%);
   }
@@ -1478,19 +1502,9 @@ body {
   }
   .footer__address {
     margin-top: 12px;
+    text-align: left;
   }
   .footer__nav {
     justify-content: flex-start;
-  }
-  .footer__rights {
-    margin-top: 40px;
-  }
-}
-@media (max-width: 360px) {
-  .values__card-image {
-    background-size: cover;
-  }
-  .webp .values__card-image {
-    background-size: cover;
   }
 }/*# sourceMappingURL=style.css.map */

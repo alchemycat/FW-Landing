@@ -95,4 +95,21 @@ window.addEventListener("DOMContentLoaded", () => {
 	}
 
 	calc();
+
+	function smoothScrolling() {
+		try {
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+			
+					document.querySelector(this.getAttribute('href')).scrollIntoView({
+						behavior: 'smooth'
+					});
+				});
+			});
+		} catch {}
+	
+	}
+
+	smoothScrolling();
 });

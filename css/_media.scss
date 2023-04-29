@@ -808,11 +808,8 @@
         }
         &__logo {
             top: 30px;
-            left: 15px;
-            transform: translateX(0%);
         }
         &__text {
-            text-align: left;
             font-size: 18px;
             line-height: 25px;
         }
@@ -822,9 +819,9 @@
         &__address {
             margin-top: 12px;
         }
-        &__nav {
-            justify-content: flex-start;
-        }
+        // &__nav {
+        //     justify-content: center!important;
+        // }
         &__rights {
             margin-top: 40px;
         }
@@ -844,6 +841,29 @@
             &-image {
                 background-size: cover;
             }
+        }
+    }
+
+    .footer {
+        &__logo {
+            top: 30px;
+            left: 15px;
+            transform: translateX(0%);
+        }
+        &__text {
+            text-align: left;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        &__contacts {
+            margin-top: 12px;
+        }
+        &__address {
+            margin-top: 12px;
+            text-align: left;
+        }
+        &__nav {
+            justify-content: flex-start;
         }
     }
 }
