@@ -485,9 +485,6 @@ body {
   color: var(--white);
   text-align: right;
 }
-.calc__left {
-  max-width: 395px;
-}
 .calc__top {
   display: flex;
   gap: 0px 60px;
@@ -873,8 +870,24 @@ body {
     position: static;
     margin-top: 100px;
   }
+  .calc {
+    padding-top: 100px;
+  }
+  .calc__wrapper {
+    position: relative;
+  }
   .calc__salary {
     font-size: 80px;
+  }
+  .calc__subtitle {
+    max-width: 900px;
+  }
+  .calc__button {
+    position: absolute;
+    left: 210px;
+    transform: translateX(-50%);
+    bottom: 50px;
+    padding: 24px 60px;
   }
   .request__wrapper::after {
     width: 760px;
