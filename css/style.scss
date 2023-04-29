@@ -461,7 +461,6 @@ body {
         padding: 60px;
         border-radius: 60px;
         background-color: var(--black);
-        // gap: 40px;
     }
     &__title {
         max-width: 370px;
@@ -516,7 +515,12 @@ body {
         align-items: center;
         border-radius: 50%;
         border: 1px solid var(--white);
-        &-active {
+        transition: all .3s ease;
+        &.active {
+            background-color: var(--white);
+            color: var(--black);
+        }
+        &:hover {
             background-color: var(--white);
             color: var(--black);
         }

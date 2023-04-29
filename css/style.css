@@ -514,8 +514,13 @@ body {
   align-items: center;
   border-radius: 50%;
   border: 1px solid var(--white);
+  transition: all 0.3s ease;
 }
-.calc__option-active {
+.calc__option.active {
+  background-color: var(--white);
+  color: var(--black);
+}
+.calc__option:hover {
   background-color: var(--white);
   color: var(--black);
 }
@@ -798,7 +803,7 @@ body {
     height: 670px;
   }
   .calc__salary {
-    font-size: 87px;
+    font-size: 82px;
   }
   .request__wrapper::after {
     height: 735px;
@@ -814,6 +819,9 @@ body {
 @media (min-width: 1400px) {
   .intro__caption {
     font-size: 160px;
+  }
+  .calc__salary {
+    font-size: 113px;
   }
 }
 @media (max-width: 1199px) {
@@ -866,7 +874,7 @@ body {
     margin-top: 100px;
   }
   .calc__salary {
-    font-size: 85px;
+    font-size: 80px;
   }
   .request__wrapper::after {
     width: 760px;
