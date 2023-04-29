@@ -101,7 +101,15 @@ window.addEventListener("DOMContentLoaded", () => {
 			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 				anchor.addEventListener('click', function (e) {
 					e.preventDefault();
-			
+					
+					const burger = document.querySelector('.header__burger');
+					const wrapper = document.querySelector(".header__wrapper");
+					
+					if (burger.classList.contains("active")) {
+						burger.classList.remove("active");
+						wrapper.classList.remove("active");
+					}
+
 					document.querySelector(this.getAttribute('href')).scrollIntoView({
 						behavior: 'smooth'
 					});
