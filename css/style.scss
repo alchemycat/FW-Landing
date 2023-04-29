@@ -743,6 +743,18 @@ body {
         max-width: 720px;
         word-wrap: break-word;
     }
+    &__list {
+        padding: 20px;
+    }
+    &__item {
+        list-style-type: disc;
+        padding: 5px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: var(--black);
+        word-wrap: break-word;
+    }
 }
 
 .footer {
