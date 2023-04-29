@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Test</title>
+		<title>Family Studio</title>
 		<link rel="stylesheet" href="./css/bootstrap.min.css" />
 		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./css/style.css" />
@@ -15,7 +15,7 @@
 				<div class="row justify-content-center">
 					<div class="col-lg-11 col-12 header__relative">
 						<div class="header__body">
-							<a href="#" class="header__logo logo">Family. Studio</a>
+							<a href="/" class="header__logo logo">Family. Studio</a>
 							<div class="header__contacts contacts d-flex d-md-none">
 								<a
 									href="https://wa.me/+7 950 000 00 00"
@@ -57,16 +57,20 @@
 								<nav class="header__nav nav">
 									<ul class="header__list nav__list">
 										<li class="nav__item">
-											<a href="#" class="header__link nav__link">О нас</a>
+											<a href="#about" class="header__link nav__link">О нас</a>
 										</li>
 										<li class="nav__item">
-											<a href="#" class="header__link nav__link">Фото</a>
+											<a href="#design" class="header__link nav__link">Фото</a>
 										</li>
 										<li class="nav__item">
-											<a href="#" class="header__link nav__link">Ценности</a>
+											<a href="#values" class="header__link nav__link"
+												>Ценности</a
+											>
 										</li>
 										<li class="nav__item">
-											<a href="#" class="header__link nav__link">Заработок</a>
+											<a href="#calc" class="header__link nav__link"
+												>Заработок</a
+											>
 										</li>
 									</ul>
 								</nav>
@@ -151,8 +155,8 @@
 				<div class="row justify-content-center">
 					<div class="col-lg-11 col-md-12">
 						<div class="row justify-content-between flex-md-column flex-lg-row">
-							<div class="col-lg-4 col-md-12">
-								<h2 class="about__title title">Family studio</h2>
+							<div class="col-lg-5 col-md-12">
+								<h2 class="about__title title" id="about">Family studio</h2>
 							</div>
 							<div class="col-lg-6 col-md-12">
 								<p class="about__subtitle subtitle">
@@ -175,7 +179,9 @@
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-11 col-12">
-						<h2 class="values__title title">Ценности команды family</h2>
+						<h2 class="values__title title" id="values">
+							Ценности команды family
+						</h2>
 						<div
 							class="row values__wrapper justify-content-between flex-column flex-md-row px-3 px-md-0"
 						>
@@ -228,7 +234,9 @@
 						<!-- Slider main container -->
 						<div class="row design__wrapper flex-lg-row flex-md-column">
 							<div class="col-lg-5 col-md-12 design__col-left">
-								<h2 class="design__title title">Стильный дизайн комнат</h2>
+								<h2 class="design__title title" id="design">
+									Стильный дизайн комнат
+								</h2>
 								<p class="design__subtitle subtitle">
 									У каждой комнаты индивидуальный дизайн интерьера, делающий
 									работу в вебкам студии максимально комфортной и приятной.
@@ -370,7 +378,7 @@
 					<div class="col-lg-11 col-12">
 						<div class="row calc__wrapper flex-column flex-xl-row">
 							<div class="col-12 calc__left col-xl-4">
-								<h2 class="calc__title title title-white">
+								<h2 class="calc__title title title-white" id="calc">
 									Твой доход с Family
 								</h2>
 								<p class="calc__subtitle subtitle subtitle-white">
@@ -437,7 +445,7 @@
 						</h2>
 					</div>
 					<div class="col-lg-11 col-12">
-						<div class="row request__wrapper">
+						<div class="row request__wrapper" id="request">
 							<div class="col-lg-6 col-12">
 								<form action="" method="POST" class="request__form form">
 									<fieldset>
@@ -631,23 +639,28 @@
 										</p>
 									</div>
 									<div
-									class="questions__question"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#question-6"
-									aria-expanded="false"
-									aria-controls="question-6"
-								>
-									<div class="questions__top">
-										<h3 class="questions__caption">
-											Сколько я смогу заработать?
-										</h3>
-									</div>
+										class="questions__question"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#question-6"
+										aria-expanded="false"
+										aria-controls="question-6"
+									>
+										<div class="questions__top">
+											<h3 class="questions__caption">
+												Сколько я смогу заработать?
+											</h3>
+										</div>
 
-									<p class="questions__answer collapse" id="question-6">
-										Мы не обещаем фантастические цифры – ориентируемся на реальные отзывы сотрудниц. Многое зависит от твоего умения преподнести себя, быть интересным собеседником, задавать позитивный настрой – и, конечно же, от количества рабочего времени. Средний заработок в месяц (при 30-40 рабочих часах в неделю) составляет ХХХ рублей.
-									</p>
-								</div>
+										<p class="questions__answer collapse" id="question-6">
+											Мы не обещаем фантастические цифры – ориентируемся на
+											реальные отзывы сотрудниц. Многое зависит от твоего умения
+											преподнести себя, быть интересным собеседником, задавать
+											позитивный настрой – и, конечно же, от количества рабочего
+											времени. Средний заработок в месяц (при 30-40 рабочих
+											часах в неделю) составляет ХХХ рублей.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -662,28 +675,67 @@
 					<div class="col-lg-11 col-12">
 						<div class="row justify-content-between flex-md-column flex-lg-row">
 							<div class="col-lg-4 col-12">
-								<h2 class="studio__title title">Family – webcam-студия в СПб</h2>
+								<h2 class="studio__title title">
+									Family – webcam-студия в СПб
+								</h2>
 							</div>
 							<div class="col-lg-7 col-12">
 								<p class="studio__text">
-									Перед тем, как начать свой проект, руководители и администраторы Family Studio поработали в разных вебкам-студиях и сформировали четкое понимание, как сделать работу модели наиболее комфортной. Именно поэтому у нас:
+									Перед тем, как начать свой проект, руководители и
+									администраторы Family Studio поработали в разных
+									вебкам-студиях и сформировали четкое понимание, как сделать
+									работу модели наиболее комфортной. Именно поэтому у нас:
 								</p>
 								<ul class="studio__list">
 									<li class="studio__item">
-										уютные комнаты с красивым интерьером и хорошей шумоизоляцией – чтобы никто не отвлекал от общения
+										уютные комнаты с красивым интерьером и хорошей шумоизоляцией
+										– чтобы никто не отвлекал от общения
 									</li>
-									<li class="studio__item">современное оборудование отличного качества и стабильный интернет. Никакие технические вопросы не будут тебя волновать</li>
-									<li class="studio__item">максимальное внимание безопасности и конфиденциальности. Студия находится под охраной, незваных гостей в ней точно не будет</li>
-									<li class="studio__item">гибкий график – ты сама решаешь, в какие дни и сколько часов будешь работать. Именно ты определяешь свои приоритеты, выбираешь точку баланса между высоким доходом и свободным временем</li>
-									<li class="studio__item">совершенно прозрачный расчет заработка и регулярные выплаты (новички могут получать вознаграждение ежедневно)</li>
-									<li class="studio__item">достойное вознаграждение - до 65%</li>
-									<li class="studio__item">мощная поддержка в команде, обучение новичков. Модели в нашей вебкам-студии не конкурируют между собой, администраторы готовы помочь каждой</li>
-									<li class="studio__item">только положительная мотивация, никаких штрафов</li>
-									<li class="studio__item">еще более выгодные условия, преимущества и бонусы при длительном сотрудничестве</li>
-									<li class="studio__item">возможность развиваться и самовыражаться. Ты можешь совершенствовать свои языковые навыки, прокачивать коммуникации</li>
+									<li class="studio__item">
+										современное оборудование отличного качества и стабильный
+										интернет. Никакие технические вопросы не будут тебя
+										волновать
+									</li>
+									<li class="studio__item">
+										максимальное внимание безопасности и конфиденциальности.
+										Студия находится под охраной, незваных гостей в ней точно не
+										будет
+									</li>
+									<li class="studio__item">
+										гибкий график – ты сама решаешь, в какие дни и сколько часов
+										будешь работать. Именно ты определяешь свои приоритеты,
+										выбираешь точку баланса между высоким доходом и свободным
+										временем
+									</li>
+									<li class="studio__item">
+										совершенно прозрачный расчет заработка и регулярные выплаты
+										(новички могут получать вознаграждение ежедневно)
+									</li>
+									<li class="studio__item">
+										достойное вознаграждение - до 65%
+									</li>
+									<li class="studio__item">
+										мощная поддержка в команде, обучение новичков. Модели в
+										нашей вебкам-студии не конкурируют между собой,
+										администраторы готовы помочь каждой
+									</li>
+									<li class="studio__item">
+										только положительная мотивация, никаких штрафов
+									</li>
+									<li class="studio__item">
+										еще более выгодные условия, преимущества и бонусы при
+										длительном сотрудничестве
+									</li>
+									<li class="studio__item">
+										возможность развиваться и самовыражаться. Ты можешь
+										совершенствовать свои языковые навыки, прокачивать
+										коммуникации
+									</li>
 								</ul>
 								<p class="studio__text">
-									Мы уверены, что ты вольешься в команду и вместе с нами добьешься успеха. Заполни анкету, сделай легкий шаг к высокому доходу.
+									Мы уверены, что ты вольешься в команду и вместе с нами
+									добьешься успеха. Заполни анкету, сделай легкий шаг к высокому
+									доходу.
 								</p>
 							</div>
 						</div>
@@ -701,16 +753,22 @@
 						>
 							<div class="col-lg-5 col-12">
 								<div class="row flex-column">
-									<a href="#" class="footer__logo logo">Family. Studio</a>
+									<a href="/" class="footer__logo logo">Family. Studio</a>
 
 									<nav class="footer__nav nav d-flex">
-										<a href="#" class="footer__link nav__link nav__link-white"
+										<a
+											href="#about"
+											class="footer__link nav__link nav__link-white"
 											>О студии</a
 										>
-										<a href="#" class="footer__link nav__link nav__link-white"
+										<a
+											href="#values"
+											class="footer__link nav__link nav__link-white"
 											>Ценности</a
 										>
-										<a href="#" class="footer__link nav__link nav__link-white"
+										<a
+											href="#request"
+											class="footer__link nav__link nav__link-white"
 											>Оставить заявку</a
 										>
 										<a href="#" class="footer__link nav__link nav__link-white"

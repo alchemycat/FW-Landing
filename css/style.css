@@ -756,6 +756,7 @@ body {
 }
 .footer__nav {
   margin-top: 40px;
+  gap: 10px;
 }
 .footer__contacts {
   margin-top: 40px;
@@ -823,6 +824,9 @@ body {
   }
   .calc__salary {
     font-size: 82px;
+  }
+  .calc__button {
+    font-size: 15px;
   }
   .request__wrapper::after {
     height: 735px;
